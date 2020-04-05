@@ -1,0 +1,43 @@
+{
+   "name": "newspark",
+   "author": "Vanessa Chammas, Maciej Holubiec, Karthik Rao, Alex Rubin",
+   "version": "1.0",
+   "description": "Donate to charities related to the news articles you read",
+   
+   "permissions": [
+       "activeTab", 
+       "declarativeContent", 
+       "storage",
+       "tabs", 
+       "contextMenus",
+       "http://*/",
+       "https://*/"
+   ],
+   
+   "background": {
+     "scripts": ["background.js"],
+     "persistent": false
+   },
+   "browser_action": {
+     "default_icon": {
+       "16": "images/news_for_good16.png",
+       "32": "images/news_for_good32.png",
+       "48": "images/news_for_good48.png",
+       "128": "images/news_for_good128.png"
+     }
+   },
+   "icons": {
+     "16": "images/news_for_good16.png",
+     "32": "images/news_for_good32.png",
+     "48": "images/news_for_good48.png",
+     "128": "images/news_for_good128.png"
+   },
+  "content_scripts" : [
+    {
+      "matches": ["https://www.nytimes.com/*", "http://www.nytimes.com/*"],
+      "css": ["/static/css/main.css"],
+      "js": ["/static/js/main.js"]
+    }
+  ],
+  "manifest_version": 2 
+}

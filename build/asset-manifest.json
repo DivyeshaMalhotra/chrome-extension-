@@ -1,0 +1,10 @@
+{
+  "main.css": "static/css/main.css",
+  "main.css.map": "static/css/main.css.map",
+  "main.js": "static/js/main.js",
+  "main.js.map": "static/js/main.js.map",
+  "static/media/logo.svg": "static/media/logo.svg",
+  "static/media/revicons.eot": "static/media/revicons.eot",
+  "static/media/revicons.ttf": "static/media/revicons.ttf",
+  "static/media/revicons.woff": "static/media/revicons.woff"
+}
